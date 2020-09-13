@@ -93,6 +93,7 @@
 // 1) Alien Attire
 // 2) Dress 'em Up
 // 3) Dirty Laundry
+// 4) Inventory
 
 const kristynsCloset = [
     "left shoe",
@@ -131,11 +132,13 @@ const kristynsCloset = [
   kristynsOutfit = [kristynsCloset[2], kristynsCloset[3], kristynsCloset[4]];
   thomsOutfit1 = [thomsCloset[0][0], thomsCloset[1][1], thomsCloset[2][2]];
   thomsOutfit2 = [thomsCloset[0][2], thomsCloset[1][0], thomsCloset[2][1]];
-//   console.log(`Kristyn's outfit is a ${kristynsOutfit[0]}, ${kristynsOutfit[1]} and a ${kristynsOutfit[2]}`);
-//   console.log(`Thom's first outfit is a ${thomsOutfit1[0]}, ${thomsOutfit1[1]}, and a ${thomsOutfit1[2]}`);
-//   console.log(`Thom's second outfit is a ${thomsOutfit2[0]}, ${thomsOutfit2[1]}, and ${thomsOutfit2[2]}`);
+  console.log(`Kristyn's outfit is a ${kristynsOutfit[0]}, ${kristynsOutfit[1]} and a ${kristynsOutfit[2]}`);
+  console.log(`Thom's first outfit is a ${thomsOutfit1[0]}, ${thomsOutfit1[1]}, and a ${thomsOutfit1[2]}`);
+  console.log(`Thom's second outfit is a ${thomsOutfit2[0]}, ${thomsOutfit2[1]}, and ${thomsOutfit2[2]}`);
 
   for(let i = 0; i < kristynsCloset.length; i++) {
-        console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
-  }
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+}
+
+console.log(thomsCloset[0],thomsCloset[1],thomsCloset[2]);
   
