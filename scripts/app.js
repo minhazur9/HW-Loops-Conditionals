@@ -74,17 +74,68 @@
 // 2) Use a for loop to call .toUpperCase() on each of them and print out the result.
 // 3) Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 
-const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
-for(let i = 0; i < turtles.length; i++){
-   const name = turtles[i].split('');
-   for(let j = 0; j < name.length; j++){
-       if(j % 2 === 0) {
-           name[j] = name[j].toUpperCase();
-       }
-       else {
-           name[j] = name[j].toLowerCase();
-       }
-    }
-    turtles[i] = name.join("");
-}
-console.log(turtles);
+// const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// for(let i = 0; i < turtles.length; i++){
+//    const name = turtles[i].split('');
+//    for(let j = 0; j < name.length; j++){
+//        if(j % 2 === 0) {
+//            name[j] = name[j].toUpperCase();
+//        }
+//        else {
+//            name[j] = name[j].toLowerCase();
+//        }
+//     }
+//     turtles[i] = name.join("");
+// }
+// console.log(turtles);
+
+// Return of the Closets
+// 1) Alien Attire
+// 2) Dress 'em Up
+// 3) Dirty Laundry
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  kristynsShoe = kristynsCloset.shift();
+  thomsCloset[2].unshift(kristynsShoe);
+  thomsCloset[0].unshift(kristynsCloset[2]);
+
+  kristynsOutfit = [kristynsCloset[2], kristynsCloset[3], kristynsCloset[4]];
+  thomsOutfit1 = [thomsCloset[0][0], thomsCloset[1][1], thomsCloset[2][2]];
+  thomsOutfit2 = [thomsCloset[0][2], thomsCloset[1][0], thomsCloset[2][1]];
+//   console.log(`Kristyn's outfit is a ${kristynsOutfit[0]}, ${kristynsOutfit[1]} and a ${kristynsOutfit[2]}`);
+//   console.log(`Thom's first outfit is a ${thomsOutfit1[0]}, ${thomsOutfit1[1]}, and a ${thomsOutfit1[2]}`);
+//   console.log(`Thom's second outfit is a ${thomsOutfit2[0]}, ${thomsOutfit2[1]}, and ${thomsOutfit2[2]}`);
+
+  for(let i = 0; i < kristynsCloset.length; i++) {
+        console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+  }
+  
