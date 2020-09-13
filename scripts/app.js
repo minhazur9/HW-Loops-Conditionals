@@ -56,16 +56,35 @@
 // 5) Jim Haff could be literally anywhere in the world. Remove "All cities" from his array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine, but see if you can do it in one line of code
 // 6) Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now, remove it from the array using .splice()
 
-const kenny = ["Kenny", 1000, "Austin"];
-const jimHaff = ["Jim H", 16, "All cities"];
-const reuben = ["Reuben", 22, "Durham"];
-const jimClark = ["Jim C", 186, "LA"];
-const ryan = ["Ryan", 65, "Denver"];
+// const kenny = ["Kenny", 1000, "Austin"];
+// const jimHaff = ["Jim H", 16, "All cities"];
+// const reuben = ["Reuben", 22, "Durham"];
+// const jimClark = ["Jim C", 186, "LA"];
+// const ryan = ["Ryan", 65, "Denver"];
 
-kenny[0] = "Gameboy";
-jimClark[1] = jimClark[1] + 1;
-ryan[2] = "Gotham City";
-reuben.splice(1,1,"Chicago");
-jimHaff.splice(2,1,"New York City","San Francisco","Toronto");
+// kenny[0] = "Gameboy";
+// jimClark[1] = jimClark[1] + 1;
+// ryan[2] = "Gotham City";
+// reuben.splice(1,1,"Chicago");
+// jimHaff.splice(2,1,"New York City","San Francisco","Toronto");
+// jimHaff.splice(2,1);
 
+// Yell at the Ninja Turtles
+// 1) Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+// 2) Use a for loop to call .toUpperCase() on each of them and print out the result.
+// 3) Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 
+const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for(let i = 0; i < turtles.length; i++){
+   const name = turtles[i].split('');
+   for(let j = 0; j < name.length; j++){
+       if(j % 2 === 0) {
+           name[j] = name[j].toUpperCase();
+       }
+       else {
+           name[j] = name[j].toLowerCase();
+       }
+    }
+    turtles[i] = name.join("");
+}
+console.log(turtles);
